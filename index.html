@@ -5,221 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac, CK Tai - Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', Arial, sans-serif;
-            background: #181c20;
-            color: #e0e3e7;
-        }
-        .section {
-            padding: 60px 20px 40px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .top-section {
-            background: url('assets/top.jpg') center/cover no-repeat;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-shadow: 0 2px 16px rgba(0,0,0,0.7);
-        }
-        .top-section h1 {
-            font-size: 2.8rem;
-            margin: 0 0 10px 0;
-            font-weight: 700;
-        }
-        .top-section h2 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            margin: 0;
-        }
-        .about-section, .contact-section, .qual-section, .exp-section {
-            background: #23272b;
-            border-radius: 16px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-        }
-        .about-section {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-top: -40px;
-            padding: 40px 20px;
-        }
-        .about-text {
-            flex: 2;
-            min-width: 250px;
-            margin-right: 30px;
-        }
-        .about-img {
-            flex: 1;
-            min-width: 180px;
-            max-width: 220px;
-        }
-        .about-img img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-        }
-        .contact-section, .qual-section, .exp-section {
-            margin-top: 30px;
-            padding: 32px 20px;
-        }
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px 32px;
-            margin-top: 10px;
-        }
-        .contact-links a {
-            color: #90caf9;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .contact-links a:hover {
-            color: #42a5f5;
-            text-decoration: underline;
-        }
-        .qual-list, .exp-list {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .exp-list li {
-            margin-bottom: 10px;
-        }
-        .menu-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(24,28,32,0.98);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-            z-index: 1000;
-        }
-        .menu-bar ul {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .menu-bar li {
-            margin: 0 18px;
-        }
-        .menu-bar a {
-            display: block;
-            padding: 16px 0;
-            color: #90caf9;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 1.08rem;
-            transition: color 0.2s;
-        }
-        .menu-bar a:hover {
-            color: #42a5f5;
-            text-decoration: underline;
-        }
-        body {
-            padding-top: 60px;
-        }
-        .contact-icon {
-            width: 22px;
-            height: 22px;
-            margin-right: 8px;
-            vertical-align: middle;
-            filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(180deg);
-            /* makes icons light for dark mode */
-        }
-        @media (max-width: 700px) {
-            .about-section {
-                flex-direction: column;
-                text-align: center;
-            }
-            .about-text {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-            .menu-bar ul {
-                flex-direction: column;
-            }
-            .menu-bar li {
-                margin: 0 0 0 0;
-            }
-        }
-        .exp-table-wrapper {
-            overflow-x: auto;
-        }
-        .exp-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: transparent;
-            color: inherit;
-        }
-        .exp-table th, .exp-table td {
-            padding: 12px 10px;
-            border-bottom: 1px solid #333a;
-            text-align: left;
-        }
-        .exp-table th {
-            background: #23272b;
-            color: #90caf9;
-            font-weight: 700;
-        }
-        .exp-link-icon {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
-            filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(180deg);
-        }
-        .exp-description {
-            font-size: 0.82em;
-            color: #b0b6bb;
-            font-style: italic;
-        }
-        .qual-table-wrapper {
-            overflow-x: auto;
-        }
-        .qual-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: transparent;
-            color: inherit;
-        }
-        .qual-table th, .qual-table td {
-            padding: 12px 10px;
-            border-bottom: 1px solid #333a;
-            text-align: left;
-        }
-        .qual-table th {
-            background: #23272b;
-            color: #90caf9;
-            font-weight: 700;
-        }
-        .tag {
-            display: inline-block;
-            padding: 2px 8px;
-            margin: 2px 2px 2px 0;
-            border-radius: 8px;
-            font-size: 0.6em;
-            font-weight: 500;
-            color: #fff;
-        }
-        .tag-cert { background: #1976d2; }
-        .tag-spec { background: #388e3c; }
-        .tag-skill { background: #7b1fa2; }
-        .tag-soft { background: #0288d1; }
-        .tag-cloud { background: #ff8f00; }
-        @media (max-width: 700px) {
-            .qual-table th, .qual-table td {
-                padding: 8px 4px;
-                font-size: 0.98em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
     <!-- Menu Bar -->
@@ -227,12 +13,31 @@
         <ul>
             <li><a href="#top">Top</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    <!-- Hamburger Button for Mobile -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <!-- Session 1: Top -->
     <section id="top" class="top-section section">
         <h1>Isaac, CK Tai</h1>
@@ -251,184 +56,254 @@
         </div>
     </section>
 
-    <!-- Session 3: Contact -->
-    <section id="contact" class="contact-section section">
-        <h2>Contact</h2>
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/in/cktaiisaac" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="contact-icon">LinkedIn</a>
-            <a href="https://www.credly.com/users/issac-tai" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/credly.svg" alt="Credly" class="contact-icon">Credly</a>
-            <a href="https://github.com/issactai0124/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="contact-icon">GitHub</a>
-            <a href="https://public.tableau.com/app/profile/isaactai/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" class="contact-icon">Tableau Public</a>
-            <a href="https://huggingface.co/issactai0124" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg" alt="Hugging Face" class="contact-icon">Hugging Face</a>
-            <a href="https://www.kaggle.com/issactai" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle" class="contact-icon">Kaggle</a>
-            <a href="https://learn.microsoft.com/en-us/users/isaactai-0249/transcript/vy89wbymxyng4e2" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoft.svg" alt="Microsoft Learn" class="contact-icon">Microsoft Learn</a>
+    <!-- Session 3: Skills -->
+    <section id="skills" class="skills-section section skill-section">
+        <h2>Skills</h2>
+        <div class="skills-table-wrapper">
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Items</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Subjects</strong></td>
+                        <td>
+                            <span class="tag tag-skill">AI/ML</span>
+                            <span class="tag tag-skill">Data Engineering</span>
+                            <span class="tag tag-skill">Data Viz</span>
+                            <span class="tag tag-skill">CI/CD</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Programming</strong></td>
+                        <td>
+                            <span class="tag tag-prog">Python</span>
+                            <span class="tag tag-prog">C++</span>
+                            <span class="tag tag-prog">SQL</span>
+                            <span class="tag tag-prog">JavaScript</span>
+                            <span class="tag tag-prog">R</span>
+                            <span class="tag tag-prog">MATLAB</span>
+                            <span class="tag tag-prog">VBA</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Software</strong></td>
+                        <td>
+                            <span class="tag tag-soft">Tableau</span>
+                            <span class="tag tag-soft">Power BI</span>
+                            <span class="tag tag-soft">Looker</span>
+                            <span class="tag tag-soft">Microsoft Fabric</span>
+                            <span class="tag tag-soft">VS Code</span>
+                            <span class="tag tag-soft">VS Studio</span>
+                            <span class="tag tag-soft">Eclipse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cloud Platforms</strong></td>
+                        <td>
+                            <span class="tag tag-cloud">Microsoft Azure</span>
+                            <span class="tag tag-cloud">AWS</span>
+                            <span class="tag tag-cloud">Google Cloud</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tools</strong></td>
+                        <td>
+                            <span class="tag tag-tool">Microsoft Copilot</span>
+                            <span class="tag tag-tool">Postman</span>
+                            <span class="tag tag-tool">RESTAPI</span>
+                            <span class="tag tag-tool">Shell Scripting</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <!-- Session 4: Qualifications -->
+    <!-- Session 4: Portfolio -->
+    <section id="portfolio" class="section portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-flex-wrapper">
+            <div class="portfolio-item">
+                <a href="https://kagura-music.jp/melisma-top" target="_blank" style="font-weight:600; color:#90caf9; text-decoration:none;">Melisma
+                    <svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px; vertical-align:middle;"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg>
+                </a>
+                <p>Revised diffusion model code to improve quality of AI-generated music.</p>
+                <span class="tag tag-skill">AI/DL</span> <span class="tag tag-prog">Python</span> <span class="tag tag-cloud">AWS</span>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://public.tableau.com/app/profile/isaactai/" target="_blank">Tableau Public <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" class="contact-icon"></a>
+                <p>Publicly hosted interactive dashboards.</p>
+                <span class="tag tag-skill">Data Viz</span> <span class="tag tag-soft">Tableau</span>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://www.kaggle.com/issactai" target="_blank">Kaggle <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle" class="contact-icon"></a>
+                <p>Participated competitions involving topics like sentimental analysis, classification and prompt engineering.</p>
+                <span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">Python</span>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://huggingface.co/issactai0124" target="_blank">Hugging Face <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg" alt="Hugging Face" class="contact-icon"></a>
+                <p>Hosted models with fine-tuning using pre-trained models for common AI tasks.</p>
+                <span class="tag tag-skill">AI/ML</span> <span class="tag tag-prog">Python</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Session 5: Qualifications -->
     <section id="qualifications" class="qual-section section">
         <h2>Qualifications</h2>
         <div class="qual-table-wrapper">
             <table class="qual-table">
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th width="90">Type</th>
-                        <th width="120">Skills</th>
-                        <th width="70">Software</th>
-                        <th width="65">Cloud</th>
-                        <th width="95">Credentials</th>
+                        <th>Title and Credentials</th>
+                        <th>Skills</th>
+                        <th>Software</th>
+                        <th>Cloud</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Microsoft Certified: Fabric Data Engineer Associate</td>
-                        <td><span class="tag tag-cert">Certification</span></td>
+                        <td><span class="tag tag-type">Certification</span> Microsoft Certified: Fabric Data Engineer Associate <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                         <td><span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">CI/CD</span></td>
                         <td><span class="tag tag-soft">Microsoft Fabric</span></td>
                         <td><span class="tag tag-cloud">Microsoft Azure</span></td>
-                        <td><a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td>AWS Certified Machine Learning Engineer - Associate</td>
-                        <td><span class="tag tag-cert">Certification</span></td>
+                        <td><span class="tag tag-type">Certification</span> AWS Certified Machine Learning Engineer - Associate <a href="https://www.credly.com/badges/17be3108-894f-46c6-b542-dd98eda81eef" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                         <td><span class="tag tag-skill">AI/ML</span><br><span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">CI/CD</span></td>
-                        <td><span class="tag tag-soft">AWS</span></td>
                         <td></td>
-                        <td><a href="https://www.credly.com/badges/17be3108-894f-46c6-b542-dd98eda81eef" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-cloud">AWS</span></td>
                     </tr>
                     <tr>
-                        <td>Google Data Analytics Specialization</td>
-                        <td><span class="tag tag-spec">Specialization Course</span></td>
-                        <td><span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">Data Visualization</span></td>
-                        <td><span class="tag tag-soft">Tableau</span><br><span class="tag tag-soft">R</span></td>
-                        <td></td>
-                        <td><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                    </tr>
-                    <tr>
-                        <td>Data Visualization with Tableau Specialization (UC Davis)</td>
-                        <td><span class="tag tag-spec">Specialization Course</span></td>
-                        <td><span class="tag tag-skill">Data Visualization</span></td>
+                        <td><span class="tag tag-type">Specialization Course</span> Google Data Analytics Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">Data Viz</span></td>
                         <td><span class="tag tag-soft">Tableau</span></td>
                         <td></td>
-                        <td><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td>Google Cloud Data Analytics Certificate</td>
-                        <td><span class="tag tag-cert">Certificate</span></td>
-                        <td><span class="tag tag-skill">Data Visualization</span></td>
+                        <td><span class="tag tag-type">Specialization Course</span> Data Viz with Tableau Specialization by <em>UC Davis</em> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Viz</span></td>
+                        <td><span class="tag tag-soft">Tableau</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag tag-type">Certificate</span> Google Cloud Data Analytics Certificate <a href="https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Viz</span></td>
                         <td></td>
                         <td><span class="tag tag-cloud">Google Cloud</span></td>
-                        <td><a href="https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td>AWS Certified Solutions Architect – Associate</td>
-                        <td><span class="tag tag-cert">Certification</span></td>
+                        <td><span class="tag tag-type">Certification</span> AWS Certified Solutions Architect – Associate <a href="https://www.credly.com/badges/5fca6b0e-7a49-40f8-971f-0bb8fa4eb39a" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                         <td><span class="tag tag-skill">CI/CD</span></td>
                         <td></td>
                         <td><span class="tag tag-cloud">AWS</span></td>
-                        <td><a href="https://www.credly.com/badges/5fca6b0e-7a49-40f8-971f-0bb8fa4eb39a" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <style>
-            .qual-table-wrapper {
-                overflow-x: auto;
-            }
-            .qual-table {
-                width: 100%;
-                border-collapse: collapse;
-                background: transparent;
-                color: inherit;
-            }
-            .qual-table th, .qual-table td {
-                padding: 12px 10px;
-                border-bottom: 1px solid #333a;
-                text-align: left;
-            }
-            .qual-table th {
-                background: #23272b;
-                color: #90caf9;
-                font-weight: 700;
-            }
-            .tag {
-                display: inline-block;
-                padding: 4px 4px;
-                margin: 2px 2px 2px 0;
-                border-radius: 8px;
-                font-size: 0.6em;
-                font-weight: 500;
-                color: #fff;
-            }
-            .tag-cert { background: #1976d2; }
-            .tag-spec { background: #388e3c; }
-            .tag-skill { background: #7b1fa2; }
-            .tag-soft { background: #0288d1; }
-            .tag-cloud { background: #ff8f00; }
-            @media (max-width: 700px) {
-                .qual-table th, .qual-table td {
-                    padding: 8px 4px;
-                    font-size: 0.98em;
-                }
-            }
-        </style>
         <p>Only key qualifications are listed. Refer to <a href="https://www.credly.com/users/issac-tai" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/credly.svg" alt="Credly" class="contact-icon">Credly</a> for more.</p>
     </section>
 
-    <!-- Session 5: Experience -->
+    <!-- Session 6: Experience -->
     <section id="experience" class="exp-section section">
         <h2>Experience</h2>
         <div class="exp-table-wrapper">
             <table class="exp-table">
                 <thead>
                     <tr>
-                        <th width="90">Date</th>
+                        <th>Date</th>
                         <th>Title</th>
-                        <th width="360">Company / Institution</th>
-                        <th></th>
+                        <th>Company / Institution</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Jan 2025 - <br>Mar 2025</td>
-                        <td>(Freelance) <strong>Assistant Data Scientist</strong><br><span class="exp-description">Revised diffusion model code in PyTorch to improve quality of AI-generated music.</span></td>
-                        <td><em>KAGURA Music Publication (Japan)</em></td>
-                        <td><a href="https://kagura-music.jp/melisma-top" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td rowspan="2">Jan 2025 - Mar 2025</td>
+                        <td>(Freelance) <strong>Assistant Data Scientist</strong></td>
+                        <td><em>KAGURA Music Publication (Japan)</em> <a href="https://kagura-music.jp/melisma-top" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td>Jul 2020 - <br>Jul 2024</td>
-                        <td><strong>Quantitative Analyst</strong><br><span class="exp-description">Boosted trading profit via feature extraction, statistical analysis and data visualization using Python and C++.</span></td>
+                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">CI/CD</span> <span class="tag tag-prog">Python</span> <span class="tag tag-soft">VS Code</span> <span class="tag tag-soft">VS Studio</span> <span class="tag tag-cloud">AWS</span> <span class="tag tag-tool">Microsoft Copilot</span> <span class="tag tag-tool">Postman</span> <span class="tag tag-tool">RESTAPI</span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Jul 2020 - Jul 2024</td>
+                        <td><strong>Quantitative Analyst</strong></td>
                         <td><em>Sapiens Technologies Ltd</em></td>
-                        <td></td>
                     </tr>
                     <tr>
-                        <td>Jan 2015 - <br>Jun 2020</td>
-                        <td><strong>Associate (Software Developer)</strong><br><span class="exp-description">Built Qt-based GUIs to display market data, trade analytics and risk parameters for in-house teams.</span></td>
-                        <td><em>Cash Algo Finance Group Ltd</em></td>
-                        <td><a href="https://www.cashalgo.com/" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">CI/CD</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">JavaScript</span> <span class="tag tag-soft">Eclipse</span> <span class="tag tag-cloud">AWS</span> <span class="tag tag-cloud">Google Cloud</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span></td>
                     </tr>
                     <tr>
-                        <td>Aug 2010 - <br>Dec 2014</td>
-                        <td><strong>Research Analyst</strong><br><span class="exp-description">Generated daily statistical reports with VBA, R and C++ using MSSQL data to provide insights.</span></td>
-                        <td><em>Celestial Asia Securities Holdings (CASH) Ltd <br>Cash Dynamic Opportunities Investment Ltd</em></td>
-                        <td><a href="https://www.cfsg.com.hk/" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td rowspan="2">Jan 2015 - Jun 2020</td>
+                        <td><strong>Associate (Software Developer)</strong></td>
+                        <td><em>Cash Algo Finance Group Ltd</em> <a href="https://www.cashalgo.com/" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td>Aug 2008 - <br>Jul 2010</td>
-                        <td><strong>M. Phil., Mathematics</strong><br><span class="exp-description">Thesis: Reconstruction of Parallel MRI Images Using High-Resolution Image Reconstruction Techniques</span></td>
-                        <td><em>The Chinese University of Hong Kong</em></td>
-                        <td><a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-soft">Power BI</span> <span class="tag tag-soft">Eclipse</span></td>
                     </tr>
                     <tr>
-                        <td>Aug 2005 - <br>Jul 2008</td>
-                        <td><strong>B. Sc., Mathematics</strong><br><span class="exp-description">Minor: Statistics and Financial Engineering</span></td>
-                        <td><em>The Chinese University of Hong Kong</em></td>
-                        <td><a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td rowspan="2">Aug 2010 - Dec 2014</td>
+                        <td><strong>Research Analyst</strong></td>
+                        <td><em>Cash Dynamic Opportunities Investment Ltd</em> <a href="https://www.cfsg.com.hk/" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">VBA</span> <span class="tag tag-soft">VS Studio</span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Aug 2008 - Jul 2010</td>
+                        <td><strong>M. Phil, Mathematics</strong></td>
+                        <td><em>The Chinese University of Hong Kong</em> <a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">MATLAB</span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Aug 2005 - Jul 2008</td>
+                        <td><strong>B. Sc., Mathematics</strong></td>
+                        <td><em>The Chinese University of Hong Kong</em> <a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">MATLAB</span> <span class="tag tag-soft">VS Studio</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
+
+    <!-- Session 7: Contact -->
+    <section id="contact" class="contact-section section">
+        <h2>Contact</h2>
+        <div class="contact-links" style="justify-content: center; text-align: center;">
+            <a href="mailto:issactai0124@gmail.com"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" class="contact-icon">Email</a>
+            <a href="https://www.linkedin.com/in/cktaiisaac" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="contact-icon">LinkedIn</a>
+            <a href="https://www.credly.com/users/issac-tai" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/credly.svg" alt="Credly" class="contact-icon">Credly</a>
+            <a href="https://github.com/issactai0124/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="contact-icon">GitHub</a>
+            <a href="https://learn.microsoft.com/en-us/users/isaactai-0249/transcript/vy89wbymxyng4e2" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoft.svg" alt="Microsoft Learn" class="contact-icon">Microsoft Learn</a>
+        </div>
+    </section>
+    <script>
+        // Hamburger menu toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburgerBtn.addEventListener('click', function() {
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        });
+        // Hide menu on link click
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.display = 'none';
+            });
+        });
+        // Hide mobile menu if resizing to desktop
+        window.addEventListener('resize', function() {
+            if(window.innerWidth > 800) {
+                mobileMenu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
