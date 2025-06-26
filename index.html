@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac, CK Tai - Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="css/default.css">
 </head>
 <body>
     <!-- Menu Bar -->
@@ -277,7 +277,7 @@
                     </tr>
                     <tr>
                         <td rowspan="2">Aug 2008 - Jul 2010</td>
-                        <td><strong>M. Phil, Mathematics</strong></td>
+                        <td><strong>M. Phil., Mathematics</strong></td>
                         <td><em>The Chinese University of Hong Kong</em> <a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
@@ -312,55 +312,6 @@
         <span id="portfolioImgModalClose" class="portfolio-img-modal-close">&times;</span>
         <img class="portfolio-img-modal-content" id="portfolioImgModalImg" alt="Portfolio Full Image">
     </div>
-    <script>
-        // Hamburger menu toggle
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        hamburgerBtn.addEventListener('click', function() {
-            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
-        });
-        // Hide menu on link click
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.style.display = 'none';
-            });
-        });
-        // Hide mobile menu if resizing to desktop
-        window.addEventListener('resize', function() {
-            if(window.innerWidth > 800) {
-                mobileMenu.style.display = 'none';
-            }
-        });
-
-        // Portfolio image lightbox
-        const portfolioModal = document.getElementById('portfolioImgModal');
-        const portfolioModalImg = document.getElementById('portfolioImgModalImg');
-        const portfolioModalClose = document.getElementById('portfolioImgModalClose');
-        document.querySelectorAll('.portfolio-img-thumb').forEach(img => {
-            img.style.cursor = 'zoom-in';
-            img.addEventListener('click', function(e) {
-                e.stopPropagation();
-                portfolioModal.style.display = 'flex';
-                portfolioModalImg.src = this.src;
-                portfolioModalImg.alt = this.alt;
-            });
-        });
-        portfolioModalClose.addEventListener('click', function() {
-            portfolioModal.style.display = 'none';
-            portfolioModalImg.src = '';
-        });
-        portfolioModal.addEventListener('click', function(e) {
-            if (e.target === portfolioModal) {
-                portfolioModal.style.display = 'none';
-                portfolioModalImg.src = '';
-            }
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                portfolioModal.style.display = 'none';
-                portfolioModalImg.src = '';
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
