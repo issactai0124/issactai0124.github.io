@@ -1,6 +1,6 @@
 Category	Items
 Topics	ML/DL|Data Engineering|Data Viz|CI/CD
-ML/DL Platforms Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI|BigQuery
+ML/DL Platforms Azure AI|Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI|BigQuery
 ML/DL Libraries Scikit-learn|PyTorch|TensorFlow|Keras|PySpark|Hugging Face|OpenCV
 Programming	Python|C++|SQL|JavaScript|R|MATLAB|VBA
 Software/BI Platform	Tableau|Power BI|Looker|Docker|VS Code|VS Studio|Eclipse
