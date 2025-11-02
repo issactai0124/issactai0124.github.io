@@ -1,7 +1,7 @@
 Category	Items
-Topics	ML/DL|Data Engineering|Data Viz|CI/CD
-ML/DL Platforms Azure AI|Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI|BigQuery
-ML/DL Libraries/Tools Scikit-learn|PyTorch|TensorFlow|Keras|PySpark|Hugging Face|LangChain|OpenCV|RAG and Vector DB
+Topics	AI/ML|Data Engineering|Data Viz|CI/CD
+AI/ML Platforms Azure Machine Learning|Azure AI Platform|Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI|BigQuery
+AI/ML Libraries/Tools Scikit-learn|PyTorch|TensorFlow|Keras|Apache Spark|MLflow|Hugging Face|LangChain|OpenCV|RAG|Vector DB
 Programming	Python|C++|SQL|JavaScript|R|MATLAB|VBA
 Software/BI Platform	Tableau|Power BI|Looker|Docker|VS Code|VS Studio|Eclipse
 Tools	Microsoft Copilot|Postman|RESTAPI|Shell Scripting
