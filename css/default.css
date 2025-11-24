@@ -1,4 +1,8 @@
-/* ========== Global Link Styles ========== */
+/* ====================================
+   1. GLOBAL STYLES & BASE LAYOUT
+   ==================================== */
+
+/* Global Link Styles */
 a, a:visited {
     color: #90caf9;
     text-decoration: none;
@@ -10,7 +14,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* ========== Base Styles ========== */
+/* Base Styles */
 body {
     margin: 4px 0 0 0;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -20,11 +24,23 @@ body {
 }
 .section {
     padding: 60px 20px 40px 20px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
-/* ========== Top Section ========== */
+/* Section Containers (Box Styling) */
+.about-section, .contact-section, .qual-section, .exp-section, .portfolio-section, .skill-section {
+    background: #23272b;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    margin-top: 30px;
+    padding: 32px 20px;
+}
+
+/* ====================================
+   2. TOP SECTION
+   ==================================== */
+
 .top-section {
     background: url('../assets/top.jpg') center/cover no-repeat;
     min-height: 75vh;
@@ -46,7 +62,7 @@ body {
     margin: 0;
 }
 
-/* ========== Top Section Text Box ========== */
+/* Top Section Text Box */
 .top-text-bg {
     background: rgba(255,255,255,0.514);
     color: #181c20;
@@ -62,23 +78,12 @@ body {
     color: #181c20;
     text-shadow: none;
 }
-@media (max-width: 700px) {
-    .top-text-bg {
-        padding: 18px 8px 12px 8px;
-        max-width: 98vw;
-    }
-}
 
-/* ========== Section Containers ========== */
-.about-section, .contact-section, .qual-section, .exp-section, .portfolio-section, .skill-section {
-    background: #23272b;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-    margin-top: 30px;
-    padding: 32px 20px;
-}
+/* ====================================
+   3. ABOUT & CONTACT SECTIONS
+   ==================================== */
 
-/* ========== About Section ========== */
+/* About Section */
 .about-section {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +110,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
-/* ========== Contact Section ========== */
+/* Contact Section */
 .contact-links {
     display: flex;
     flex-wrap: wrap;
@@ -119,10 +124,14 @@ body {
     height: 22px;
     margin-right: 8px;
     vertical-align: middle;
+    /* Invert color for dark background */
     filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(180deg);
 }
 
-/* ========== Menu Bar ========== */
+/* ====================================
+   4. NAVIGATION (Menu, Hamburger, Mobile)
+   ==================================== */
+
 .menu-bar {
     position: fixed;
     top: 0;
@@ -143,68 +152,7 @@ body {
     margin: 0 18px;
 }
 
-/* ========== Tables ========== */
-.exp-table-wrapper, .qual-table-wrapper, .skills-table-wrapper {
-    overflow-x: auto;
-}
-.exp-table, .qual-table, .skills-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: transparent;
-    color: inherit;
-}
-.exp-table th, .exp-table td,
-.qual-table th, .qual-table td,
-.skills-table th, .skills-table td {
-    padding: 12px 10px;
-    border-bottom: 1px solid #77aa;
-    text-align: left;
-}
-.exp-table th, .qual-table th, .skills-table th {
-    background: #23272b;
-    color: #90caf9;
-    font-weight: 700;
-}
-.exp-link-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(180deg);
-}
-
-/* ========== Portfolio Flex Layout ========== */
-.portfolio-flex-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px 16px;
-    justify-content: flex-start;
-}
-.portfolio-flex-wrapper .portfolio-item {
-    min-width: 350px;
-    flex: 1 1 400px;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 0;
-}
-
-/* ========== Tags ========== */
-.tag {
-    display: inline-block;
-    padding: 2px 8px;
-    margin: 2px 2px 2px 0;
-    border-radius: 8px;
-    font-size: 0.75em;
-    font-weight: 500;
-    color: #fff;
-}
-.tag-type { background: #00bcd4; color: #fff; }
-.tag-skill { background: #1976d2; }
-.tag-prog { background: #e65100; }
-.tag-soft { background: #388e3c; }
-.tag-tool { background: #ff8f00; }
-.tag-cloud { background: #7b1fa2; }
-
-/* ========== Hamburger & Mobile Menu ========== */
+/* Hamburger & Mobile Menu (Mobile styles moved to media query section) */
 .hamburger {
     display: none;
     position: fixed;
@@ -216,6 +164,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    /* We'll handle display only in the media queries */
 }
 .hamburger span {
     display: block;
@@ -225,11 +174,6 @@ body {
     background: #ffffffcc;
     border-radius: 2px;
     transition: 0.3s;
-}
-@media (max-width: 800px) {
-    .hamburger {
-        display: block;
-    }
 }
 .mobile-menu {
     display: none;
@@ -254,27 +198,137 @@ body {
     margin: 12px 0;
 }
 
-/* ========== Portfolio Hover Card ========== */
-.portfolio-hover-card .portfolio-img-hover {
-    position: relative;
+/* ====================================
+   5. TABLES
+   ==================================== */
+
+.exp-table-wrapper, .qual-table-wrapper, .skills-table-wrapper {
+    overflow-x: auto;
+}
+.exp-table, .qual-table, .skills-table {
     width: 100%;
-    min-height: 220px;
-    margin: 16px 0 8px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    border-collapse: collapse;
+    background: transparent;
+    color: inherit;
+}
+/* Combined TH and TD styles */
+.exp-table th, .exp-table td,
+.qual-table th, .qual-table td,
+.skills-table th, .skills-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #77aa;
+    text-align: left;
+}
+/* Combined TH styles */
+.exp-table th, .qual-table th, .skills-table th {
+    background: #23272b;
+    color: #90caf9;
+    font-weight: 700;
+}
+.exp-link-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    /* Invert color for dark background */
+    filter: invert(70%) sepia(10%) saturate(300%) hue-rotate(180deg);
+}
+
+/* Ensure tags in skills table display inline and wrap naturally */
+.skills-table td {
+    white-space: normal;
+}
+.skills-table td .tag {
+    display: inline-block;
+    margin: 2px 6px 6px 0;
+    vertical-align: middle;
+}
+
+/* ====================================
+   6. TAGS
+   ==================================== */
+
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px 2px 2px 0;
+    border-radius: 8px;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #fff;
+}
+/* Tag Colors (Removed redundant 'color: #fff' from tag-type) */
+.tag-type { background: #00bcd4; }
+.tag-skill { background: #1976d2; }
+.tag-prog { background: #e65100; }
+.tag-soft { background: #388e3c; }
+.tag-tool { background: #ff8f00; }
+.tag-cloud { background: #7b1fa2; }
+.tag-lib { background: #e90d0d; }
+
+/* Container to layout tags in a row that wraps to multiple lines */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 0px;
+    margin-top: 8px;
+    align-items: center;
+}
+
+/* ====================================
+   7. PORTFOLIO
+   ==================================== */
+
+/* Portfolio Grid Layout */
+.portfolio-flex-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 32px 16px;
+    align-items: start;
+}
+/* Consolidated portfolio item styles */
+.portfolio-flex-wrapper .portfolio-item {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Kept for aligning left */
+}
+.portfolio-flex-wrapper .portfolio-item .tag {
+    display: inline-block;
+    width: auto;
+    margin: 6px 8px 6px 0;
+}
+
+/* Portfolio Image Box (General Styles) */
+.portfolio-img-hover {
+    aspect-ratio: 16/10;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
     background: #181c20;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
 }
-.portfolio-hover-card .portfolio-img-thumb {
+/* Image inside the container (Replaced redundant copy) */
+.portfolio-img-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
     display: block;
     transition: filter 0.3s;
+}
+
+/* Portfolio Hover Card (Specific Styles) */
+.portfolio-hover-card .portfolio-img-hover {
+    min-height: 220px;
+    margin: 16px 0 8px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
 }
 .portfolio-hover-card .portfolio-hover-desc {
     position: absolute;
@@ -302,17 +356,11 @@ body {
 .portfolio-hover-card .portfolio-img-hover:focus-within .portfolio-img-thumb {
     filter: blur(2px) brightness(0.7);
 }
-@media (max-width: 700px) {
-    .portfolio-hover-card .portfolio-img-hover {
-        min-height: 140px;
-    }
-    .portfolio-hover-card .portfolio-hover-desc {
-        font-size: 0.98em;
-        padding: 12px 6px;
-    }
-}
 
-/* ========== Portfolio Image Modal (Lightbox) ========== */
+/* ====================================
+   8. PORTFOLIO IMAGE MODAL (Lightbox)
+   ==================================== */
+
 .portfolio-img-modal {
     display: none;
     position: fixed;
@@ -353,49 +401,41 @@ body {
 .portfolio-img-modal-close:hover {
     color: #90caf9;
 }
+
+/* ====================================
+   9. RESPONSIVE MEDIA QUERIES
+   ==================================== */
+
+/* For smaller screens (desktop breakpoint for hamburger and menu) */
+@media (max-width: 800px) {
+    .menu-bar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    body {
+        padding-top: 0px; /* Shrink padding since the fixed menu bar is gone */
+    }
+}
+
+/* Tablet / Medium Screens */
+@media (max-width: 900px) {
+    .portfolio-flex-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Screens (Max 700px) */
 @media (max-width: 700px) {
-    .portfolio-img-modal-content {
+    /* Top Section Text Box */
+    .top-text-bg {
+        padding: 18px 8px 12px 8px;
         max-width: 98vw;
-        max-height: 60vh;
     }
-    .portfolio-img-modal-close {
-        top: 8px;
-        right: 16px;
-        font-size: 2.2rem;
-    }
-}
 
-/* ========== Portfolio Image Box ========== */
-.portfolio-img-hover {
-    aspect-ratio: 16/10;
-    min-height: 0;
-    min-width: 0;
-    width: 100%;
-    max-width: 100%;
-    background: #181c20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-}
-.portfolio-img-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-    transition: filter 0.3s;
-}
-@media (max-width: 700px) {
-    .portfolio-img-hover {
-        aspect-ratio: 16/12;
-    }
-}
-
-/* ========== Responsive ========== */
-@media (max-width: 700px) {
+    /* About Section */
     .about-section {
         flex-direction: column;
         text-align: center;
@@ -408,21 +448,29 @@ body {
         max-width: 100%;
         margin-bottom: 20px;
     }
+
+    /* Navigation */
     .menu-bar ul {
         flex-direction: column;
     }
     .menu-bar li {
-        margin: 0 0 0 0;
+        margin: 0;
     }
+
+    /* General Layout */
     .section {
         padding: 32px 4px 24px 4px;
     }
+
+    /* Top Section */
     .top-section h1 {
         font-size: 2rem;
     }
     .top-section h2 {
         font-size: 1.1rem;
     }
+
+    /* Tables */
     .skills-table th, .skills-table td,
     .qual-table th, .qual-table td,
     .exp-table th, .exp-table td {
@@ -437,15 +485,41 @@ body {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+
+    /* Tags */
     .tag {
         font-size: 0.85em;
         padding: 2px 6px;
     }
-    .qual-table th, .qual-table td {
-        padding: 8px 4px;
+
+    /* Portfolio */
+    .portfolio-flex-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-hover-card .portfolio-img-hover {
+        min-height: 140px;
+    }
+    .portfolio-hover-card .portfolio-hover-desc {
         font-size: 0.98em;
+        padding: 12px 6px;
+    }
+    .portfolio-img-hover {
+        aspect-ratio: 16/12;
+    }
+
+    /* Modal */
+    .portfolio-img-modal-content {
+        max-width: 98vw;
+        max-height: 60vh;
+    }
+    .portfolio-img-modal-close {
+        top: 8px;
+        right: 16px;
+        font-size: 2.2rem;
     }
 }
+
+/* Small Mobile Screens (Max 500px) */
 @media (max-width: 500px) {
     .top-section h1 {
         font-size: 1.3rem;
@@ -456,13 +530,5 @@ body {
     .tag {
         font-size: 0.7em;
         padding: 2px 4px;
-    }
-}
-@media (max-width: 800px) {
-    .menu-bar {
-        display: none;
-    }
-    .hamburger {
-        display: block;
     }
 }

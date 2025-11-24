@@ -15,13 +15,17 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <!-- Hamburger Button for Mobile -->
-    <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu"></button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
     <!-- Mobile Menu -->
     <nav class="mobile-menu" id="mobileMenu">
         <ul>
@@ -29,8 +33,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -64,31 +68,36 @@
                         <th>Category</th>
                         <th>Items</th>
                     </tr>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Topics</strong></td>
-                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">CI/CD</span></td>
-                    </tr>
-                    <tr>
                         <td><strong>AI/ML Platforms</strong></td>
-                        <td><span class="tag tag-cloud">Azure Machine Learning</span> <span class="tag tag-cloud">Azure AI Platform</span> <span class="tag tag-cloud">Azure Databricks</span> <span class="tag tag-cloud">Microsoft Fabric</span> <span class="tag tag-cloud">Amazon SageMaker</span> <span class="tag tag-cloud">Google Vertex AI</span> <span class="tag tag-cloud">BigQuery</span></td>
+                        <td><span class="tag tag-skill">AI/ML</span><span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-skill">CI/CD</span> <br> <span class="tag tag-cloud">Azure Machine Learning</span> <span class="tag tag-cloud">Azure AI Platform</span> <span class="tag tag-cloud">Azure Databricks</span> <span class="tag tag-cloud">Microsoft Fabric</span> <span class="tag tag-cloud">Amazon SageMaker</span> <span class="tag tag-cloud">Google Vertex AI</span></td>
                     </tr>
                     <tr>
                         <td><strong>AI/ML Libraries/Tools</strong></td>
-                        <td><span class="tag tag-prog">Scikit-learn</span> <span class="tag tag-prog">PyTorch</span> <span class="tag tag-prog">TensorFlow</span> <span class="tag tag-prog">Keras</span> <span class="tag tag-prog">Apache Spark</span> <span class="tag tag-prog">MLflow</span> <span class="tag tag-prog">Hugging Face</span> <span class="tag tag-prog">LangChain</span> <span class="tag tag-prog">OpenCV</span> <span class="tag tag-prog">RAG</span> <span class="tag tag-prog">Vector DB</span></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-lib">Scikit-learn</span> <span class="tag tag-lib">PyTorch</span> <span class="tag tag-lib">TensorFlow</span> <span class="tag tag-lib">Keras</span> <span class="tag tag-lib">Apache Spark</span> <span class="tag tag-lib">MLflow</span> <span class="tag tag-lib">Hugging Face</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen AI/LLM</strong></td>
+                        <td><span class="tag tag-skill">Prompt Engineering</span> <span class="tag tag-skill">RAG</span> <span class="tag tag-skill">Agentic AI</span> <span class="tag tag-lib">OpenAI</span> <span class="tag tag-lib">LangChain</span> <span class="tag tag-lib">Google Gemini</span> <span class="tag tag-lib">Watsonx</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Analytics/Visualization</strong></td>
+                        <td><span class="tag tag-skill">Data Viz</span> <span class="tag tag-soft">Tableau</span> <span class="tag tag-soft">Power BI</span> <span class="tag tag-soft">BigQuery</span> <span class="tag tag-soft">Looker</span></td>
                     </tr>
                     <tr>
                         <td><strong>Programming</strong></td>
-                        <td><span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">JavaScript</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">MATLAB</span> <span class="tag tag-prog">VBA</span></td>
+                        <td><span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">JavaScript (React, Node.js)</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">MATLAB</span> <span class="tag tag-prog">VBA</span></td>
                     </tr>
                     <tr>
-                        <td><strong>Software/BI Platform</strong></td>
-                        <td><span class="tag tag-soft">Tableau</span> <span class="tag tag-soft">Power BI</span> <span class="tag tag-soft">Looker</span> <span class="tag tag-soft">Docker</span> <span class="tag tag-soft">VS Code</span> <span class="tag tag-soft">VS Studio</span> <span class="tag tag-soft">Eclipse</span></td>
+                        <td><strong>CI / CD</strong></td>
+                        <td><span class="tag tag-skill">CI/CD</span><span class="tag tag-tool">Git</span> <span class="tag tag-tool">Docker</span> <span class="tag tag-tool">Kubernetes</span></td>
                     </tr>
                     <tr>
-                        <td><strong>Tools</strong></td>
-                        <td><span class="tag tag-tool">Microsoft Copilot</span> <span class="tag tag-tool">Postman</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span></td>
+                        <td><strong>Tools / Other Services</strong></td>
+                        <td><span class="tag tag-tool">Vibe Coding</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span> <span class="tag tag-tool">Postman</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -100,6 +109,24 @@
         <h2>Portfolio</h2>
         <div class="portfolio-flex-wrapper">
             <div class="portfolio-item portfolio-hover-card">
+                <a href="https://secondary-school-learner.onrender.com/" target="_blank">Secondary School Learner
+                    <svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px; vertical-align:middle;"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg>
+                </a>
+                <div class="portfolio-img-hover">
+                    <img src="assets/learner1.png" alt="Secondary School Learner Demo" class="portfolio-img-thumb">
+                    <div class="portfolio-hover-desc" style="pointer-events: none;">
+                        Designed a web site showing a demo of generating MC quizzes and teacher-style feedback using an LLM backend.<br>
+                    </div>
+                </div>
+                    <div class="tag-list">
+                        <span class="tag tag-skill">Prompt Engineering</span>
+                        <span class="tag tag-skill">CI/CD</span>
+                        <span class="tag tag-lib">Google Gemini</span>
+                        <span class="tag tag-prog">JavaScript (Node.js)</span>
+                    </div>
+            </div>
+
+            <div class="portfolio-item portfolio-hover-card">
                 <a href="https://kagura-music.jp/melisma-top" target="_blank">Melisma
                     <svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:6px; vertical-align:middle;"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg>
                 </a>
@@ -109,7 +136,12 @@
                         Revised diffusion model code to improve quality of AI-generated music.<br>
                     </div>
                 </div>
-                <span class="tag tag-skill">AI/ML</span> <span class="tag tag-prog">PyTorch</span> <span class="tag tag-prog">Python</span>
+                    <div class="tag-list">
+                        <span class="tag tag-skill">AI/ML</span>
+                        <span class="tag tag-skill">Cloud Computing</span>
+                        <span class="tag tag-lib">PyTorch</span>
+                        <span class="tag tag-prog">Python</span>
+                    </div>
             </div>
             <div class="portfolio-item portfolio-hover-card">
                 <a href="https://public.tableau.com/app/profile/issactai/" target="_blank">Tableau Public <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" class="contact-icon"></a>
@@ -119,7 +151,10 @@
                         Designed and published publicly available interactive dashboards for business intelligence.<br>
                     </div>
                 </div>
-                <span class="tag tag-skill">Data Viz</span> <span class="tag tag-soft">Tableau</span>
+                    <div class="tag-list">
+                        <span class="tag tag-skill">Data Viz</span>
+                        <span class="tag tag-soft">Tableau</span>
+                    </div>
             </div>
             <div class="portfolio-item portfolio-hover-card">
                 <a href="https://www.kaggle.com/issactai" target="_blank">Kaggle <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle" class="contact-icon"></a>
@@ -129,7 +164,17 @@
                         Participated competitions involving common AL/ML applications like classification, prompt engineering and fine-tuning of LLM models.<br>
                     </div>
                 </div>
-                <span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">Scikit-learn</span> <span class="tag tag-prog">PyTorch</span> <span class="tag tag-prog">TensorFlow</span> <span class="tag tag-prog">Keras</span> <span class="tag tag-prog">Hugging Face</span> <span class="tag tag-prog">Python</span>
+                    <div class="tag-list">
+                        <span class="tag tag-skill">AI/ML</span>
+                        <span class="tag tag-skill">Data Viz</span>
+                        <span class="tag tag-skill">Prompt Engineering</span>
+                        <span class="tag tag-lib">Scikit-learn</span>
+                        <span class="tag tag-lib">PyTorch</span>
+                        <span class="tag tag-lib">TensorFlow</span>
+                        <span class="tag tag-lib">Keras</span>
+                        <span class="tag tag-lib">Hugging Face</span>
+                        <span class="tag tag-prog">Python</span>
+                    </div>
             </div>
             <div class="portfolio-item portfolio-hover-card">
                 <a href="https://huggingface.co/issactai0124" target="_blank">Hugging Face <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg" alt="Hugging Face" class="contact-icon"></a>
@@ -139,78 +184,16 @@
                         Hosted models with fine-tuning using pre-trained models for common AI/ML tasks.<br>
                     </div>
                 </div>
-                <span class="tag tag-skill">AI/ML</span> <span class="tag tag-prog">Hugging Face</span> <span class="tag tag-prog">Python</span>
+                    <div class="tag-list">
+                        <span class="tag tag-skill">AI/ML</span>
+                        <span class="tag tag-lib">Hugging Face</span>
+                        <span class="tag tag-prog">Python</span>
+                    </div>
             </div>
         </div>
     </section>
-
-    <!-- Session 5: Qualifications -->
-    <section id="qualifications" class="qual-section section">
-        <h2>Qualifications</h2>
-        <div class="qual-table-wrapper">
-            <table class="qual-table">
-                <thead>
-                    <tr>
-                        <th>Title and Credentials</th>
-                        <th>Topics</th>
-                        <th>Skills</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="tag tag-type">Certification</span> Microsoft Certified: Azure Data Scientist Associate <a href="https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">CI/CD</span></td>
-                        <td><span class="tag tag-cloud">Azure Machine Learning</span> <span class="tag tag-cloud">Azure AI Platform</span> <span class="tag tag-cloud">Azure Databricks</span> <span class="tag tag-cloud">MLflow</span> <span class="tag tag-cloud">RAG</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Certification</span> Microsoft Certified: Fabric Data Engineer Associate <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">Data Engineering</span></td>
-                        <td><span class="tag tag-cloud">Microsoft Fabric</span> <span class="tag tag-prog">Apache Spark</span> <span class="tag tag-prog">SQL</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Certification</span> AWS Certified Machine Learning Engineer - Associate <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">CI/CD</span></td>
-                        <td><span class="tag tag-cloud">Amazon SageMaker</span> <span class="tag tag-prog">Apache Spark</span> <span class="tag tag-soft">Docker</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Specialization Course</span> IBM RAG and Agentic AI <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/B1YWJIGADQ0B" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">AI/ML</span></td>
-                        <td><span class="tag tag-cloud">LangChain</span> <span class="tag tag-cloud">RAG</span> <span class="tag tag-cloud">Vector DB</span> <span class="tag tag-prog">Python</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Specialization Course</span> Advanced Machine Learning on Google Cloud <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/NDUKBXDON1R5" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Data Viz</span></td>
-                        <td><span class="tag tag-prog">TensorFlow</span> <span class="tag tag-prog">Keras</span> <span class="tag tag-prog">Python</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Specialization Course</span> Google Advanced Data Analytics <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6RKI8TRL4V4W" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Data Viz</span></td>
-                        <td><span class="tag tag-prog">Python</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-soft">Tableau</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Specialization Course</span> Google Data Analytics <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Data Viz</span></td>
-                        <td><span class="tag tag-prog">Python</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">R</span> <span class="tag tag-soft">Tableau</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Specialization Course</span> Data Visualization with Tableau by <em>UC Davis</em> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">Data Viz</span></td>
-                        <td><span class="tag tag-soft">Tableau</span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-type">Certificate</span> Google Cloud Data Analytics Certificate <a href="https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
-                        <td><span class="tag tag-skill">Data Viz</span></td>
-                        <td><span class="tag tag-cloud">Google Vertex AI</span> <span class="tag tag-cloud">BigQuery</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-soft">Looker</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p>More qualifications at <a href="https://www.credly.com/users/issac-tai" target="_blank">Credly <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/credly.svg" alt="Credly" class="contact-icon"></a>, 
-            <a href="https://www.skills.google/public_profiles/ca171755-2336-40c3-858e-50f7700447f8" target="_blank">Google Skills <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlecloud.svg" alt="Google Cloud" class="contact-icon"></a> and 
-            <a href="https://learn.microsoft.com/en-us/users/issactai/transcript/vy89wbymxyng4e2" target="_blank">Microsoft Learn <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoft.svg" alt="Microsoft Learn" class="contact-icon"></a>.</p>
-    </section>
-
-    <!-- Session 6: Experience -->
+    
+    <!-- Session 5: Experience -->
     <section id="experience" class="exp-section section">
         <h2>Experience and Education</h2>
         <div class="exp-table-wrapper">
@@ -229,7 +212,7 @@
                         <td><em>KAGURA Music Pub. (Japan)</em> <a href="https://kagura-music.jp/melisma-top" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-prog">Scikit-learn</span> <span class="tag tag-prog">PyTorch</span> <span class="tag tag-prog">Python</span> <span class="tag tag-soft">VS Code</span> <span class="tag tag-tool">Github Copilot</span> <span class="tag tag-tool">Postman</span> <span class="tag tag-tool">RESTAPI</span></td>
+                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-lib">Scikit-learn</span> <span class="tag tag-lib">PyTorch</span> <span class="tag tag-prog">Python</span> <span class="tag tag-tool">Git</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Postman</span> </td>
                     </tr>
                     <tr>
                         <td rowspan="2">Jul 2020 - Jul 2024</td>
@@ -237,7 +220,7 @@
                         <td><em>Sapiens Technologies Ltd</em></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">CI/CD</span> <span class="tag tag-cloud">Google Vertex AI</span> <span class="tag tag-prog">TensorFlow</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">JavaScript</span> <span class="tag tag-soft">Docker</span> <span class="tag tag-soft">Eclipse</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span></td>
+                        <td colspan="2"><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">CI/CD</span> <span class="tag tag-cloud">Google Vertex AI</span> <span class="tag tag-lib">Scikit-learn</span> <span class="tag tag-lib">TensorFlow</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">JavaScript (React)</span> <span class="tag tag-tool">Git</span> <span class="tag tag-tool">Docker</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span></td>
                     </tr>
                     <tr>
                         <td rowspan="2">Jan 2015 - Jun 2020</td>
@@ -245,7 +228,7 @@
                         <td><em>Cash Algo Finance Group Ltd</em> <a href="https://www.cashalgo.com/" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-soft">Power BI</span> <span class="tag tag-soft">Eclipse</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span></td>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-soft">Power BI</span> <span class="tag tag-tool">Git</span> <span class="tag tag-tool">RESTAPI</span> <span class="tag tag-tool">Shell Scripting</span> <span class="tag tag-tool">Postman</span></td>
                     </tr>
                     <tr>
                         <td rowspan="2">Aug 2010 - Dec 2014</td>
@@ -253,7 +236,7 @@
                         <td><em>Cash Dynamic Opportunities Investment Ltd</em> <a href="https://www.cfsg.com.hk/" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">VBA</span> <span class="tag tag-soft">VS Studio</span></td>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-skill">Data Engineering</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">VBA</span></td>
                     </tr>
                     <tr>
                         <td rowspan="2">Aug 2008 - Jul 2010</td>
@@ -269,11 +252,86 @@
                         <td><em>The Chinese University of Hong Kong</em> <a href="https://www.cuhk.edu.hk/english/index.html" target="_blank" class="exp-link" style="margin-left:8px;"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">MATLAB</span> <span class="tag tag-soft">VS Studio</span></td>
+                        <td colspan="2"><span class="tag tag-skill">Data Viz</span> <span class="tag tag-prog">C++</span> <span class="tag tag-prog">R</span> <span class="tag tag-prog">MATLAB</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+    </section>
+
+    <!-- Session 6: Qualifications -->
+    <section id="qualifications" class="qual-section section">
+        <h2>Qualifications</h2>
+        <div class="qual-table-wrapper">
+            <table class="qual-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Title and Credentials</th>
+                        <th>Topics</th>
+                        <th>Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 2025</td>
+                        <td><span class="tag tag-type">Certification</span> Microsoft Certified: Azure Data Scientist Associate <a href="https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-skill">CI/CD</span><br> <span class="tag tag-skill">Prompt Engineering</span> <span class="tag tag-skill">RAG</span></td>                        <td><span class="tag tag-cloud">Azure Machine Learning</span> <span class="tag tag-cloud">Azure AI Platform</span> <span class="tag tag-cloud">Azure Databricks</span> <span class="tag tag-lib">MLflow</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jun 2025</td>
+                        <td><span class="tag tag-type">Certification</span> Microsoft Certified: Fabric Data Engineer Associate <a href="https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Engineering</span></td>
+                        <td><span class="tag tag-cloud">Microsoft Fabric</span> <span class="tag tag-lib">Apache Spark</span> <span class="tag tag-prog">SQL</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 2025</td>
+                        <td><span class="tag tag-type">Certification</span> AWS Certified Machine Learning Engineer - Associate <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-skill">CI/CD</span></td>
+                        <td><span class="tag tag-cloud">Amazon SageMaker</span> <span class="tag tag-lib">Apache Spark</span> <span class="tag tag-tool">Docker</span></td>
+                    </tr>
+                    <tr>
+                        <td>Sep 2025</td>
+                        <td><span class="tag tag-type">Specialization Course</span> IBM RAG and Agentic AI <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/B1YWJIGADQ0B" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">RAG</span></td>
+                        <td><span class="tag tag-lib">LangChain</span> <span class="tag tag-prog">Python</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aug 2025</td>
+                        <td><span class="tag tag-type">Specialization Course</span> Advanced Machine Learning on Google Cloud <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/NDUKBXDON1R5" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Cloud Computing</span></td>
+                        <td><span class="tag tag-lib">TensorFlow</span> <span class="tag tag-lib">Keras</span> <span class="tag tag-prog">Python</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aug 2025</td>
+                        <td><span class="tag tag-type">Specialization Course</span> Google Advanced Data Analytics <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/6RKI8TRL4V4W" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">AI/ML</span> <span class="tag tag-skill">Data Engineering</span><br><span class="tag tag-skill">Data Viz</span></td>
+                        <td><span class="tag tag-soft">Tableau</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">SQL</span></td>
+                    </tr>
+                    <tr>
+                        <td>May 2025</td>
+                        <td><span class="tag tag-type">Specialization Course</span> Google Data Analytics <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Engineering</span> <span class="tag tag-skill">Data Viz</span></td>
+                        <td><span class="tag tag-soft">Tableau</span> <span class="tag tag-prog">Python</span> <span class="tag tag-prog">SQL</span> <span class="tag tag-prog">R</span></td>
+                    </tr>
+                    <tr>
+                        <td>May 2025</td>
+                        <td><span class="tag tag-type">Specialization Course</span> Data Visualization with Tableau by <em>UC Davis</em> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Data Viz</span></td>
+                        <td><span class="tag tag-soft">Tableau</span></td>
+                    </tr>
+                    <tr>
+                        <td>Apr 2025</td>
+                        <td><span class="tag tag-type">Certificate</span> Google Cloud Data Analytics Certificate <a href="https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85" target="_blank" class="exp-link"><svg class="exp-link-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 1 7 7l-3 3a5 5 0 0 1-7-7"/><path d="M14 11a5 5 0 0 0-7-7l-3 3a5 5 0 0 0 7 7"/></svg></a></td>
+                        <td><span class="tag tag-skill">Cloud Computing</span> <span class="tag tag-skill">Data Viz</span></td>
+                        <td><span class="tag tag-cloud">Google Vertex AI</span> <span class="tag tag-soft">BigQuery</span> <span class="tag tag-soft">Looker</span> <span class="tag tag-prog">SQL</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>More qualifications at <a href="https://www.credly.com/users/issac-tai" target="_blank">Credly <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/credly.svg" alt="Credly" class="contact-icon"></a>, 
+            <a href="https://www.skills.google/public_profiles/ca171755-2336-40c3-858e-50f7700447f8" target="_blank">Google Skills <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlecloud.svg" alt="Google Cloud" class="contact-icon"></a> and 
+            <a href="https://learn.microsoft.com/en-us/users/issactai/transcript/vy89wbymxyng4e2" target="_blank">Microsoft Learn <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoft.svg" alt="Microsoft Learn" class="contact-icon"></a>.</p>
     </section>
 
     <!-- Session 7: Contact -->
@@ -286,7 +344,6 @@
             <a href="https://github.com/issactai0124/" target="_blank">GitHub <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="contact-icon"></a>
         </div>
     </section>
-    <!-- Portfolio Image Modal -->
     <div id="portfolioImgModal" class="portfolio-img-modal">
         <span id="portfolioImgModalClose" class="portfolio-img-modal-close">&times;</span>
         <img class="portfolio-img-modal-content" id="portfolioImgModalImg" alt="Portfolio Full Image">

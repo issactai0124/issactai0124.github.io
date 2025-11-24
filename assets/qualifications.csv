@@ -1,10 +1,10 @@
-Qualifications	Type	Topics	Skills	Credentials
-Microsoft Certified: Azure Data Scientist Associate	Certification	AI/ML|Data Engineering|CI/CD	Azure Machine Learning|Azure AI Platform|Azure Databricks|MLflow|RAG	https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1
-Microsoft Certified: Fabric Data Engineer Associate	Certification	Data Engineering	Microsoft Fabric|Apache Spark|SQL	https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118
-AWS Certified Machine Learning Engineer - Associate	Certification	AI/ML|Data Engineering|CI/CD	Amazon SageMaker|Apache Spark|Docker	https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25
-IBM RAG and Agentic AI	Specialization Course	AI/ML	LangChain|RAG|Vector DB|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/B1YWJIGADQ0B
-Advanced Machine Learning on Google Cloud	Specialization Course	AI/ML|Data Engineering|Data Viz	TensorFlow|Keras|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/NDUKBXDON1R5
-Google Advanced Data Analytics	Specialization Course	AI/ML|Data Engineering|Data Viz	Python|SQL|Tableau	https://www.coursera.org/account/accomplishments/specialization/certificate/6RKI8TRL4V4W
-Google Data Analytics	Specialization Course	Data Engineering|Data Viz	Python|SQL|R|Tableau	https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH
-Data Visualization with Tableau Tableau by <em>UC Davis</em>	Specialization Course	Data Viz	Tableau	https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15
-Google Cloud Data Analytics Certificate	Certificate	Data Viz	Google Vertex AI|BigQuery|SQL|Looker	https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85
+Date    Title	Type	Topics	Skills	Credentials
+Oct 2025    Microsoft Certified: Azure Data Scientist Associate	Certification	AI/ML|Data Engineering||Cloud Computing|CI/CD||Prompt Engineering|RAG	Azure Machine Learning|Azure AI Platform|Azure Databricks|MLflow	https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1
+Jun 2025    Microsoft Certified: Fabric Data Engineer Associate	Certification	Data Engineering	Microsoft Fabric|Apache Spark|SQL	https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118
+Apr 2025    AWS Certified Machine Learning Engineer - Associate	Certification	AI/ML|Data Engineering||Cloud Computing|CI/CD	Amazon SageMaker|Apache Spark|Docker	https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25
+Sep 2025    IBM RAG and Agentic AI	Specialization Course	AI/ML	LangChain|RAG|Vector DB|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/B1YWJIGADQ0B
+Aug 2025    Advanced Machine Learning on Google Cloud	Specialization Course	AI/ML|Cloud Computing	TensorFlow|Keras|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/NDUKBXDON1R5
+Aug 2025    Google Advanced Data Analytics	Specialization Course	AI/ML|Data Engineering||Data Viz	Tableau|Python|SQL	https://www.coursera.org/account/accomplishments/specialization/certificate/6RKI8TRL4V4W
+May 2025    Google Data Analytics	Specialization Course	Data Engineering|Data Viz	Tableau|Python|SQL|R	https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH
+May 2025    Data Visualization with Tableau Tableau by <em>UC Davis</em>	Specialization Course	Data Viz	Tableau	https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15
+Apr 2025    Google Cloud Data Analytics Certificate	Certificate	Cloud Computing|Data Viz	Google Vertex AI|BigQuery|Looker|SQL	https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85

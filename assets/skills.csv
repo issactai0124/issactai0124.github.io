@@ -1,7 +1,8 @@
 Category	Items
-Topics	AI/ML|Data Engineering|Data Viz|CI/CD
-AI/ML Platforms Azure Machine Learning|Azure AI Platform|Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI|BigQuery
-AI/ML Libraries/Tools Scikit-learn|PyTorch|TensorFlow|Keras|Apache Spark|MLflow|Hugging Face|LangChain|OpenCV|RAG|Vector DB
-Programming	Python|C++|SQL|JavaScript|R|MATLAB|VBA
-Software/BI Platform	Tableau|Power BI|Looker|Docker|VS Code|VS Studio|Eclipse
-Tools	Microsoft Copilot|Postman|RESTAPI|Shell Scripting
+AI/ML Platforms AI/ML|Data Engineering|Cloud Computing|CI/CD||Azure Machine Learning|Azure AI Platform|Azure Databricks|Microsoft Fabric|Amazon SageMaker|Google Vertex AI
+AI/ML Libraries/Tools AI/ML||Scikit-learn|PyTorch|TensorFlow|Keras|Apache Spark|MLflow|Hugging Face
+Gen AI/LLM	Prompt Engineering|RAG|Agentic AI||OpenAI|LangChain|Google Gemini|Watsonx
+Data Analytics/Visualization	Data Viz|Tableau|Power BI|BigQuery|Looker
+Programming	Python|C++|SQL|JavaScript (React, Node.js)|R|MATLAB|VBA
+CI/CD   CI/CD|Git|Docker|Kubernetes
+Tools/Other Services	Vibe Coding|RESTAPI|Shell Scripting|Postman
