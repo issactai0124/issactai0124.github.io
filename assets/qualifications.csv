@@ -1,10 +1,12 @@
-Date    Title	Type	Topics	Skills	Credentials
-Oct 2025    Microsoft Certified: Azure Data Scientist Associate	Certification	AI/ML|Data Engineering||Cloud Computing|CI/CD||Prompt Engineering|RAG	Azure Machine Learning|Azure AI Platform|Azure Databricks|MLflow	https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1
-Jun 2025    Microsoft Certified: Fabric Data Engineer Associate	Certification	Data Engineering	Microsoft Fabric|Apache Spark|SQL	https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118
-Apr 2025    AWS Certified Machine Learning Engineer - Associate	Certification	AI/ML|Data Engineering||Cloud Computing|CI/CD	Amazon SageMaker|Apache Spark|Docker	https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25
-Sep 2025    IBM RAG and Agentic AI	Specialization Course	AI/ML	LangChain|RAG|Vector DB|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/B1YWJIGADQ0B
-Aug 2025    Advanced Machine Learning on Google Cloud	Specialization Course	AI/ML|Cloud Computing	TensorFlow|Keras|Python	https://www.coursera.org/account/accomplishments/specialization/certificate/NDUKBXDON1R5
-Aug 2025    Google Advanced Data Analytics	Specialization Course	AI/ML|Data Engineering||Data Viz	Tableau|Python|SQL	https://www.coursera.org/account/accomplishments/specialization/certificate/6RKI8TRL4V4W
-May 2025    Google Data Analytics	Specialization Course	Data Engineering|Data Viz	Tableau|Python|SQL|R	https://www.coursera.org/account/accomplishments/specialization/certificate/R51AJQCD51CH
-May 2025    Data Visualization with Tableau Tableau by <em>UC Davis</em>	Specialization Course	Data Viz	Tableau	https://www.coursera.org/account/accomplishments/specialization/certificate/JXN7F7B54S15
-Apr 2025    Google Cloud Data Analytics Certificate	Certificate	Cloud Computing|Data Viz	Google Vertex AI|BigQuery|Looker|SQL	https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85
+Date    Title	Type	Skills	Credentials
+Oct 2025    Microsoft Certified: Azure Data Scientist Associate	Certification	Azure Databricks/ML|MLflow|Python	https://learn.microsoft.com/api/credentials/share/en-gb/IssacTai/FF5133670C97CE63?sharingId=F0F305745EF344F1
+Jun 2025    Microsoft Certified: Fabric Data Engineer Associate	Certification	Microsoft Fabric|Apache Spark|Relational DB	https://learn.microsoft.com/api/credentials/share/en-us/IsaacTai-0249/6725CCE7D72A2118
+Apr 2025    AWS Certified Machine Learning Engineer - Associate	Certification	Amazon SageMaker|Apache Spark|Docker	https://cp.certmetrics.com/amazon/en/public/verify/credential/d556a2213c2c41f7abac64f48546cd25
+Feb 2026    IBM iOS and Android Mobile App Developer	Professional Certificate	Git/GitHub|REST APIs|Python|JavaScript (React, Node.js)|Dart (Flutter)|Vibe Coding	https://www.coursera.org/account/accomplishments/professional-cert/MX9HSQ302UZK
+Nov 2025    IBM Data Engineering	Professional Certificate	Apache Spark|Apache Airflow|Relational DB|NoSQL DB|Docker|Kubernetes|REST APIs|Shell Scripting|Python|Looker	https://www.coursera.org/account/accomplishments/professional-cert/1QFAOOI3BTB9
+Sep 2025    IBM RAG and Agentic AI	Professional Certificate	RAG|LangChain|OpenAI|Prompt Engineering|Vector DB|NoSQL DB	https://www.coursera.org/account/accomplishments/professional-cert/B1YWJIGADQ0B
+Aug 2025    Google Advanced Data Analytics	Professional Certificate	Python|Tableau	https://www.coursera.org/account/accomplishments/professional-cert/6RKI8TRL4V4W
+May 2025    Google Data Analytics	Professional Certificate	Python|R|Tableau	https://www.coursera.org/account/accomplishments/professional-cert/R51AJQCD51CH
+Jan 2026    Robotic Process Automation by <em>UiPath</em>	Specialization Course	UiPath	https://www.coursera.org/account/accomplishments/specialization/certificate/MAEH3MD64QDS
+May 2025    Data Visualization with Tableau Tableau by <em>UC Davis</em>	Specialization Course	Tableau	https://www.coursera.org/account/accomplishments/professional-cert/JXN7F7B54S15
+Apr 2025    Google Cloud Data Analytics Certificate	Certificate	Google Vertex AI|BigQuery|Relational DB|Looker	https://www.credly.com/badges/fa9b1520-f40c-4860-a81f-306750e8ff85
